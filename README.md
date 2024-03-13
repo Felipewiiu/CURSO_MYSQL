@@ -45,6 +45,26 @@ DROP {DATABASE | SCHEMA} [IF EXISTS] db_name
 
 2. VARCHAR: quando nos referimos ao VARCHAR(4), se quisermos armazenar "aa", será guardado somente dois caracteres sem gastar espaço a mais no disco.
 
+## Comando para a criação de tabelas no banco de dados
+
+````
+CREATE TABLE tbCliente
+(CPF VARCHAR(11),
+NOME VARCHAR(100),
+ENDERECO1 VARCHAR(150),
+ENDERECO2 VARCHAR(150),
+BAIRRO VARCHAR(50),
+CIDADE VARCHAR(50),
+ESTADO VARCHAR(50),
+CEP VARCHAR(8),
+IDADE SMALLINT,
+SEXO VARCHAR(1),
+LIMITE_CREDITO FLOAT,
+VOLUME_COMPRA FLOAT,
+PRIMEIRA_COMPRA BIT(1))
+
+````
+
 
 
 
