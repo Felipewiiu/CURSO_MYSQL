@@ -65,6 +65,32 @@ PRIMEIRA_COMPRA BIT(1))
 
 ````
 
+## Comando para a inserção de dados em uma tabela
+
+````
+USE SUCOS;
+
+INSERT INTO tabela_de_vendas(MATRICULA, NOME, PERCENTUAL_COMISSAO) 
+VALUES
+('00987', 'Maria Silva', 0.15),
+('00543', 'Carlos Santos', 0.12),
+('00876', 'Ana Oliveira', 0.08),
+('00456', 'Ricardo Almeida Mendonça Junior', 0.18),
+('00123', 'Fernanda Sousa', 0.09);
+
+
+````
+
+## Comando para a atualização de dados em uma tabelas
+
+````
+USE SUCOS;
+
+UPDATE tbproduto SET EMBALAGEM = 'Lata', PRECO_LISTA =  2.46
+WHERE 
+PRODUTO = '1037797';
+
+````
 
 
 
