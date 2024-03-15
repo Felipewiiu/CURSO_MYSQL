@@ -86,9 +86,24 @@ VALUES
 ````
 USE SUCOS;
 
-UPDATE tbproduto SET EMBALAGEM = 'Lata', PRECO_LISTA =  2.46
+UPDATE tbproduto 
+SET EMBALAGEM = 'Lata', PRECO_LISTA =  2.46
 WHERE 
 PRODUTO = '1037797';
+
+````
+
+## Comando para deletar um registro do banco de dados.
+
+````
+USE SUCOS;
+
+DELETE FROM tbproduto
+WHERE
+PRODUTO = '1037797';
+
+SELECT * FROM tbproduto;
+DESC tbproduto;
 
 ````
 
