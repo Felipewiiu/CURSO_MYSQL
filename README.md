@@ -107,6 +107,23 @@ DESC tbproduto;
 
 ````
 
+## Adicionando chave primária à tabela
+
+````
+USE SUCOS;
+
+ALTER TABLE tbproduto
+ADD PRIMARY KEY (PRODUTO);
+
+````
+
+## Adicionando uma nova coluna  a tabela de clientes.
+
+````
+ALTER TABLE tbcliente
+ADD column (data_nascimento DATE);
+
+````
 
 
 
