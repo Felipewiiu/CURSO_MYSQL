@@ -125,5 +125,44 @@ ADD column (data_nascimento DATE);
 
 ````
 
+## Adicionando dados na taela de cliente
+
+````
+
+INSERT INTO tbcliente (
+CPF,NOME,ENDERECO1,ENDERECO2,BAIRRO,CIDADE,ESTADO,CEP,IDADE,SEXO,LIMITE_CREDITO,VOLUME_COMPRA,PRIMEIRA_COMPRA,data_nascimento)
+VALUES(
+'00388934505',
+'João da silva',
+'Rua projetada A número 10',
+'',
+'Vila roman',
+'caratinga',
+'amazonas',
+'45256852',
+30,
+'M',
+1000.00,
+2000,
+0,
+'1989-10-05')
+
+````
+
+## Comando para alteração da tabela de vendedores
+
+````
+USE SUCOS;
+
+ALTER TABLE tabela_de_vendedores
+ADD primary key(MATRICULA);
+
+alter table tabela_de_vendedores
+ADD COLUMN (DATA_ADMISSÃO DATE, DE_FERIAS bit);
+
+desc tabela_de_vendedores;
+
+````
+
 
 
